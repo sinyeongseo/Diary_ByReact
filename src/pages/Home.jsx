@@ -3,7 +3,7 @@ import { DiaryStateContext } from "../App";
 
 import Header from "../components/Header"
 import Button from "../components/Button"
-import DirayList from "../components/DiaryList"
+import DiaryList from "../components/DiaryList"
 
 
 const getMonthlyData = (pivotDate, data) => {
@@ -41,7 +41,7 @@ const Home = () => {
                 leftChild={<Button onClick={onDecreaseMonth} text={"<"}/>}
                 rightChild={<Button onClick={onIncreaseMonth} text={">"}/>}
             />
-            <DirayList data={monthlyData}/>
+            <DiaryList data={monthlyData}/>
         </div>
     );
 };
